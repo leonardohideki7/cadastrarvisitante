@@ -14,7 +14,7 @@ main() {
     if (arquivo != NULL) {
         fclose(arquivo);
     } else {
-        printf("Não foi possível abrir.\n");
+        printf("NÃ£o foi possÃ­vel abrir.\n");
         return 1;
     }
     do {
@@ -23,7 +23,7 @@ main() {
     registrarVisitante(&visitante);
 
     printf("\n=========================");
-    printf("\nInformações do visitante:\n");
+    printf("\nInformaÃ§Ãµes do visitante:\n");
     printf("Nome - %s\n", visitante.nome);
     printf("CPF - %s\n", visitante.cpf);
     printf("Idade - %d\n", visitante.idade);
@@ -32,8 +32,8 @@ main() {
 
    criarRecibo(visitante);
 
-    printf("\nHá mais algum visitante a ser cadastrado?\n");
-    printf("Digite a tecla 1 se sim. Digite 2 se não:");
+    printf("\nHÃ¡ mais algum visitante a ser cadastrado?\n");
+    printf("Digite a tecla 1 se sim. Digite 2 se nÃ£o:");
     scanf(" %d", &cadastrarLoop);
 
     } while (cadastrarLoop == 1);
