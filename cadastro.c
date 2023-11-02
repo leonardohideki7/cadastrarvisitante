@@ -19,11 +19,12 @@ bool validarCPF(const char *cpf) {
 void registrarVisitante(struct Visitante visitante) {
     FILE *arquivo = fopen("visitantes.txt", "a");
 
-    printf("Informe o nome: ");
-    scanf("%s", visitante.nome);
+     printf("Informe o nome completo: ");
+    scanf(" %[^\n]", visitante.nome);
+
 
     do {
-        printf("Digite o CPF (somente números, tudo junto, onze dígitos): ");
+        printf("Digite o CPF (somente nÃºmeros, tudo junto, onze dÃ­gitos): ");
         scanf("%s", visitante.cpf);
     } while (!validarCPF(visitante.cpf));
 
@@ -66,7 +67,7 @@ void criarRecibo(struct Visitante visitante) {
         fprintf(recibo, "=========================\n");
         fclose(recibo);
     } else {
-        printf("Não foi possível criar o recibo.\n");
+        printf("NÃ£o foi possÃ­vel criar o recibo.\n");
     }
 }
 
