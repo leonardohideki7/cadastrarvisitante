@@ -3,6 +3,7 @@
 #define CPF_TAMANHO 12
 #define IDADE_TAMANHO 3
 #define MAX_NOME_COMPLETO 100
+#define MAX_VISITANTES 100
 typedef struct cadastro Cadastro;
 
 struct Visitante {
@@ -19,6 +20,5 @@ struct Visitante {
 salvarArquivo(struct Visitante visitante);
 struct Visitante carregarArquivo();
 void criarRecibo(struct Visitante visitante);
-
 
 
