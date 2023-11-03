@@ -71,16 +71,6 @@ main() {
 
             if (cpfValido) {
                 printf("CPF válido, pode prosseguir com a pesquisa.\n");
-
-
-
-
-
-
-
-
-
-
         iniciarPesquisa();
         pPergunta();
         scanf("%d", &p1);
