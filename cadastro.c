@@ -71,4 +71,3 @@ void criarRecibo(struct Visitante visitante) {
     }
 }
 
-
